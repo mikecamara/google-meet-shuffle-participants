@@ -8,3 +8,4 @@ yarn-error.log*
 
 # Chrome extension
 dist/
+coverage/

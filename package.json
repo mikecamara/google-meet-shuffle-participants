@@ -1,0 +1,51 @@
+{
+  "name": "google-meet-shuffle-participants",
+  "version": "1.0.0",
+  "description": "Google Meet Shuffle Participants: A Chrome extension for shuffling the participant list in Google Meet calls, with additional name support.",
+  "main": "manifest.json",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikecamara/google-meet-shuffle-participants.git"
+  },
+  "keywords": [
+    "Google",
+    "Meet",
+    "Chrome",
+    "extension",
+    "Participant",
+    "list",
+    "Shuffle",
+    "Copy",
+    "Additional",
+    "names",
+    "Fisher-Yates",
+    "WebRTC",
+    "Video",
+    "conferencing",
+    "Remote",
+    "work",
+    "Online",
+    "meetings",
+    "Collaboration",
+    "Productivity"
+  ],
+  "author": "Mike Camara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikecamara/google-meet-shuffle-participants/issues"
+  },
+  "homepage": "https://github.com/mikecamara/google-meet-shuffle-participants#readme",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "jsdom": "^21.1.1",
+    "path-browserify": "^1.0.1",
+    "text-encoding": "^0.7.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

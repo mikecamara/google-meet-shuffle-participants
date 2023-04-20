@@ -34,3 +34,5 @@ const handleMessage = (request, sender, sendResponse) => {
 
 // Add a listener for incoming messages from the background script
 chrome.runtime.onMessage.addListener(handleMessage);
+
+module.exports = { getParticipants };
