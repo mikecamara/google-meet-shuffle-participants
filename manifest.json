@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Google Meet Shuffle Participants",
+    "version": "1.0",
+    "description": "Shuffle the list of participants in a Google Meet",
+    "host_permissions": [
+      "https://meet.google.com/*"
+    ],
+    "permissions": [
+      "activeTab",
+      "clipboardWrite"
+    ],
+    "action": {
+      "default_icon": {
+        "128": "icon-128.png"
+      },
+      "default_title": "Shuffle Participants",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://meet.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+      

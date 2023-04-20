@@ -1,0 +1,11 @@
+Privacy Policy for Google Meet Shuffle Participants Extension
+
+This extension does not collect any personal data from its users. It only accesses and manipulates the data within the Google Meet webpage that the user is currently viewing. This data is not stored or transmitted to any third-party servers.
+
+The extension does not use any tracking or analytics tools to collect data about its users or their behavior. It does not use cookies or any other means of tracking user activity.
+
+The extension does not share any data with third-party services or applications.
+
+If you have any questions or concerns about the privacy policy for this extension, please contact us at mike.camara.se@gmail.com.
+
+This privacy policy may be updated at any time. Any changes will be reflected on this page.
