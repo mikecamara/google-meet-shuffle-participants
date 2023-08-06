@@ -4,19 +4,20 @@
  */
 const extensionUserName = "Mike Camara";
 
-/**
- * Retrieves the list of participants from the DOM.
- * @returns {string[]} An array of participant names.
- */
 const getParticipants = () => {
   // Query all DOM elements with the attribute 'data-self-name'
   const participantElements = document.querySelectorAll('[data-self-name]');
 
-  // Map the elements to their text content (names) and replace "You" with the extension user's name
-  return Array.from(participantElements).map((element) => {
-    const name = element.textContent;
-    return name === "You" ? extensionUserName : name;
+  // Map the elements to their direct child's text content (names) and replace "You" with the extension user's name
+  const participants = Array.from(participantElements).map((element) => {
+    // If the childNode exists and is of type TEXT_NODE (Node.TEXT_NODE is 3)
+    const name = (element.firstChild && element.firstChild.nodeType === Node.TEXT_NODE)
+                   ? element.firstChild.nodeValue
+                   : element.textContent;
+    return name.trim() === "You" ? extensionUserName : name.split(" ")[0].trim() + " " + name.split(" ")[1][0].trim();
   });
+
+  return participants;
 };
 
 /**
